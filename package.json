@@ -1,0 +1,34 @@
+{
+  "name": "api-skeleton",
+  "version": "0.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "author": "Carlos Apablaza",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-async-await": "^1.1.0",
+    "http": "0.0.0",
+    "npm": "^5.8.0",
+    "proxyquire": "^2.0.1",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "chai-http": "^3.0.0",
+    "express-node-metrics": "^1.4.2",
+    "istanbul": "^1.0.0-alpha.2",
+    "jshint": "^2.9.4",
+    "jslint": "~0.10.3",
+    "kafka-node2": "^0.4.0",
+    "mocha": "~3.2.0",
+    "mocha-istanbul": "~0.2.0",
+    "mock-express-response": "^0.2.2"
+  }
+}
