@@ -1,6 +1,6 @@
-const db = require('../enviroments/db');
-const mongoDB = require('../enviroments/mongoDB');
-const apiPaths = require('../enviroments/apiRemote');
+const db = require('./db');
+const mongoDB = require('./mongoDB');
+const apiPaths = require('./apiRemote');
 
 module.exports = {    
     getDatabase : function(){            
