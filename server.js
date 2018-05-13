@@ -1,9 +1,12 @@
 var app = require('./app/app'); 
 
-var enviroment = require('./config/enviroments/factoryEnv');
+const enviroment = require('./config/enviroments/factoryEnv');
 
-var apiPort = process.env.PORT || 3000;
+const apiPort = process.env.PORT || 3000;
 
 app.listen(apiPort, () => {
-    console.log("working with :"+JSON.stringify(enviroment.getEnviroment()));
+    console.log('using enviroment : ');
+    console.log(JSON.stringify(enviroment.getDatabase()));    
+    console.log(JSON.stringify(enviroment.getMongoDB()));
+    console.log(JSON.stringify(enviroment.getApiRemote()));
 });
